@@ -1,0 +1,19 @@
+extends shared/layout
+
+block main-content
+  div#add
+    form#add-form(method="post", action="/materials") 
+      label(for="title") Title:
+      br 
+      input#title.form-input(name="title")
+      br
+      br  
+      label(for="description") Description:
+      br 
+      textarea#description.form-input.description(name="description") 
+      br
+      br  
+      label(for="image") Image url:
+      br 
+      input#img.form-input(type="url", name="url")
+      input#submit.btn.btn-success(type="submit", value="Add")

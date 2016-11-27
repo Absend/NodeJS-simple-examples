@@ -1,0 +1,9 @@
+extends shared/layout
+
+block main-content
+
+  each material in materials
+    div.materialContainer 
+      h3= material.title
+      p= material.description
+      img(src= material.image)
