@@ -8,7 +8,7 @@ module.exports = {
 
         data.createMaterial(newMaterial, (err, material) => {
             if (err) {
-                console.log('Failed to add new material: ' + err);
+                console.log("Failed to add new material: " + err);
                 return res.send({ reason: err.toString() });
             }
             res.redirect("/home");
